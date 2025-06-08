@@ -1,0 +1,105 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Uv virtual environment
+sai/
+.venv/ # Common default name for venv, good to include
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib60/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller
+#  Usually pyinstaller outputs a main.spec file in your project root,
+#  along with a build/ and a dist/ folder.
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+cover/
+
+# Flake8/Pylint/Ruff/Mypy specific
+.flake8
+.pylintrc
+.ruff_cache/
+.mypy_cache/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# Spyder project settings
+.spyderproject
+.spyproject
+
+# VS Code
+.vscode/
+
+# PyCharm
+.idea/
+
+# AWS SAM (if you were to use it for deployment)
+.aws-sam/
+
+# macOS specific
+.DS_Store
+._*
+
+# Windows specific
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Log files
+*.log
+logs/
+
+# Temporary files
+*.tmp
+*~
+*.bak
+*.swp
+
+# Specific to your project if needed
+# For example, if you have local data files you don't want to commit:
+# data/*.csv
+# local_config.json
+
+# Secrets or sensitive configuration files
+# (Ensure these are NEVER committed - use environment variables or a secrets manager)
+# .env
+# secrets.json
+# aws_credentials.txt

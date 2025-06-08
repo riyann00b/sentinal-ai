@@ -1,0 +1,95 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+backend-path = ["."]
+
+[project]
+name = "sentinel-ai-kdp-validator"
+version = "0.3.1" # Incremented for dependency refinement
+description = "An AI-powered KDP Pre-submission Validation Assistant for Amazon Internal Hackathon, using Bedrock and Streamlit."
+readme = "README.md"
+authors = [
+    { name = "[Your Name / Team Name]", email = "[your_amazon_email@amazon.com]" },
+]
+license = { text = "Amazon Confidential - Internal Use Only" }
+requires-python = ">=3.9"
+
+classifiers = [
+    "Development Status :: 3.1 - Alpha",
+    "Environment :: Web Environment",
+    "Framework :: Streamlit",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Other Audience",
+    "License :: Other/Proprietary License",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Office/Business :: Publishing",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Text Processing :: General",
+    "Topic :: Utilities",
+]
+
+keywords = [
+    "kdp", "amazon", "publishing", "validation", "ai", "bedrock",
+    "claude", "streamlit", "hackathon", "llm", "productivity"
+]
+
+# Listing only the direct dependencies of YOUR code.
+# The package manager (pip/uv) will resolve their sub-dependencies.
+dependencies = [
+    "streamlit>=1.45.1",   # Using your specific version as minimum
+    "boto3>=1.38.30",        # Using your specific version as minimum
+    "python-docx>=1.1.2",    # Using your specific version as minimum
+    "PyPDF2>=3.0.1",         # Using your specific version as minimum
+    "EbookLib>=0.19",        # Using your specific version as minimum
+    "beautifulsoup4>=4.13.4", # Using your specific version as minimum
+]
+
+# --- Tool specific configurations (Examples) ---
+
+[tool.black]
+line-length = 119
+target-version = ['py39', 'py310', 'py311', 'py312']
+include = '\.pyi?$'
+exclude = '''
+/(
+    \.eggs
+  | \.git
+  | \.hg
+  | \.mypy_cache
+  | \.tox
+  | \.venv
+  | _build
+  | buck-out
+  | build
+  | dist
+  | sai_env # Your uv environment name
+)/
+'''
+
+[tool.isort]
+profile = "black"
+line_length = 119
+multi_line_output = 3
+include_trailing_comma = true
+force_grid_wrap = 0
+use_parentheses = true
+ensure_newline_before_comments = true
+skip_gitignore = true
+skip = ["sai"]
+
+[tool.ruff]
+line-length = 119
+select = ["E", "W", "F", "I", "C", "B"]
+ignore = ["E501", "B008"]
+exclude = [
+    ".bzr", ".direnv", ".eggs", ".git", ".hg", ".mypy_cache", ".nox", ".pants.d",
+    ".ruff_cache", ".svn", ".tox", ".venv", "__pypackages__", "_build", "buck-out",
+    "build", "dist", "node_modules", "venv", "sai"
+]
+target-version = "py39"
