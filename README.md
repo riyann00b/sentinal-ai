@@ -156,11 +156,5 @@ Sentinel AI offers a proactive approach to KDP compliance by providing:
 *   **Automated Ticket Triage (Concept):** Explore using AI to categorize common publisher issues flagged by Sentinel AI to suggest routing to appropriate internal support queues.
 *   **User Authentication & Profile Management:** For personalized settings and history (post-hackathon).
 *   **Direct KDP API Integration (Long-term, if feasible & approved):** To pre-fill KDP setup forms or perform live checks.
-
-## 🤝 Project Team & Contact
-
-*   **[Your Name / Team Member Names]**
-*   Primary Contact: `[your_amazon_email@amazon.com]`
-
 ---
 *Amazon Confidential - For Internal Hackathon Use Only. This tool provides guidance and is not a substitute for carefully reading and adhering to all official KDP Terms and Conditions and Content Guidelines.*
